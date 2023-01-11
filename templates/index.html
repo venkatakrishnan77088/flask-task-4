@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+table,th,td
+{
+border:1px solid black;
+border-collapse:collapse;
+}
+
+</style>
+</head>
+<body>
+  {{data}}
+  <table border="1">
+      <tr>
+          <th>id</th>
+          <th>fund</th>
+          <th>nav</th>
+      </tr>
+      {%for i in data%}
+      <tr>
+          <td>{{i.id}}</td>
+          <td>{{i.fund}}</td>
+          <td>{{i.nav}}</td>
+      </tr>
+      {%endfor%}
+  </table>
+  
+</table><br><br>
+
+<form action="#" method="post">
+  <input type="text" name="number" placeholder="Enter number" required="1">
+  <input type="submit" name="submit">
+</form>
+
+
+</form>
+
+
+
+</body>
+</html>
